@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Layout.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/serverHostText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/serverHostText"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/serverPortText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/serverPortText"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/userNameText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/userNameText"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/passwordText"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/firstNameText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/firstNameText"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/lastNameText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/lastNameText"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/emailText"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/genderText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/genderText"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inputFields"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <EditText
+                android:id="@+id/serverHostInput"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/serverPortInput"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/userNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/firstNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/lastNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp" />
+
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:id="@+id/genderInput">
+
+                <RadioButton
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:checked="true"
+                    android:id="@+id/maleButton"
+                    />
+
+                <TextView
+                    android:id="@+id/maleText"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:text="@string/maleText" />
+
+                <RadioButton
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/femaleButton"
+                    />
+
+                <TextView
+                    android:id="@+id/femaleText"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:text="@string/femaleText" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signInButton"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registerButton"
+            android:gravity="center" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

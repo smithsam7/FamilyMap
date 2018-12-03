@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FamilyMap</string>
+    <string name="serverHostText">Server Host:</string>
+    <string name="serverPortText">Server Port:</string>
+    <string name="userNameText">User Name:</string>
+    <string name="passwordText">Password:</string>
+    <string name="firstNameText">First Name:</string>
+    <string name="lastNameText">Last Name:</string>
+    <string name="emailText">Email:</string>
+    <string name="genderText">Gender:</string>
+    <string name="maleText">Male</string>
+    <string name="femaleText">Female</string>
+    <string name="signInButton">Sign In</string>
+    <string name="registerButton">Register</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
